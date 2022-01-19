@@ -11,4 +11,5 @@ export const ResumeBtn = styled.button`
   border-radius: 50%;
   padding: 5px;
   margin-left: 50px;
+  margin-top: 20px;
 `;
