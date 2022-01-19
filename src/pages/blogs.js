@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Blogs from '../components/Blogs';
+import ScrollToTop from '../components/ScrollToTop';
 
 const BlogsPage = () => {
     return (
-        <div>
-            blogs
-        </div>
+        <>
+            <ScrollToTop />
+            <Blogs />
+        </>
     )
 }
 
