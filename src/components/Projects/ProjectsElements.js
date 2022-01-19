@@ -9,12 +9,20 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   background: #BAEAC8;
 
-  @media screen and (max-width: 768px) {
-      height: 1600px;
+  @media screen and (max-width: 1068px) {
+      height: 1000px;
   }
 
-  @media screen and (max-width: 500px) {
-      height: 1600px;
+  @media screen and (max-width: 988px) {
+      height: 1050px;
+  }
+
+  @media screen and (max-width: 768px) {
+      height: 1700px;
+  }
+
+  @media screen and (max-width: 565px) {
+      height: 1700px;
   }
 `;
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const TechStackContainer = styled.div`
-  height: 1050px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,11 +9,19 @@ export const TechStackContainer = styled.div`
   background: #fff;
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
-      height: 1300px;
+  @media screen and (max-width: 1068px) {
+      height: 800px;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 988px) {
+      height: 800px;
+  }
+
+  @media screen and (max-width: 816px) {
+      height: 1100px;
+  }
+
+  @media screen and (max-width: 565px) {
       height: 1400px;
   }
 `;

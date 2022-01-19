@@ -35,14 +35,14 @@ const InfoSection = ({
     id,
 }) => {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 1000 });
     }, []);
 
     return (
         <>
             <InfoContainer 
               data-aos="fade-right" 
-              data-aos-offset="300" 
+              data-aos-offset="200" 
               data-aos-easing="ease-in-sine" 
               lightBg={lightBg} 
               id={id}
