@@ -64,7 +64,7 @@ const HeroSection = () => {
                       offset={-80}
                     >
                       <HomeBtn to="/contact">
-                        Hire Me { hover? <ArrowForward /> : <ArrowRight />}
+                        Work with Me { hover? <ArrowForward /> : <ArrowRight />}
                       </HomeBtn>
                     </Button>
                 </HeroBtnWrapper>
