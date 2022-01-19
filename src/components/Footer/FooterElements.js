@@ -87,6 +87,8 @@ export const FooterLink = styled(Link)`
 export const FooterP = styled.p`
   color: lightgray;
   line-height: 2;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const SocialMedia = styled.section`

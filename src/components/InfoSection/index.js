@@ -33,7 +33,6 @@ const InfoSection = ({
     dark,
     dark2,
     id,
-    target
 }) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -66,7 +65,6 @@ const InfoSection = ({
                                       primary={primary ? 1 : 0}
                                       dark={dark ? 1 : 0}
                                       dark2={dark2 ? 1 : 0}
-                                      target={target}
                                     >{buttonLabel}</Button>
                                 </BtnWrap>
                             </TextWrapper>

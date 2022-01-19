@@ -70,7 +70,7 @@ const Footer = () => {
                         <FooterLinkItems>
                             <FooterLinkTitle>Keep in Touch</FooterLinkTitle>
                             <FooterP>
-                                <MdEmail />keith.hoka@gmail.com
+                                <MdEmail /><br/>keith.hoka@gmail.com
                             </FooterP>
                             <FooterP>
                                 <MdLocationOn /><br/>Sydney, Australia.
