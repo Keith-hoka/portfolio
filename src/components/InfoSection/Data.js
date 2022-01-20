@@ -50,4 +50,5 @@ export const homeObjThree = {
     dark: false,
     primary: false,
     darkText: true,
+    target: "_blank"
 };
