@@ -1,5 +1,5 @@
 export const blogObjOne = {
-    to: "//keith-hoka.github.io/project0",
+    to: "/blogs/ga",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -16,7 +16,7 @@ export const blogObjOne = {
 };
 
 export const blogObjTwo = {
-    to: "//foodshoppingapp.herokuapp.com/",
+    to: "/",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -33,7 +33,7 @@ export const blogObjTwo = {
 };
 
 export const blogObjThree = {
-    to: "//fir-a4ab6.web.app/",
+    to: "/",
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -50,7 +50,7 @@ export const blogObjThree = {
 };
 
 export const blogObjFour = {
-    to: "//travel-blog-ga.netlify.app/",
+    to: "/",
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

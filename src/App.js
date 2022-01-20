@@ -7,7 +7,7 @@ import BlogsPage from './pages/blogs';
 import ResumePage from './pages/resume';
 import ProjectsDetailsPage from './pages/projectsDetails';
 import { Worker } from '@react-pdf-viewer/core';
-import Blogs from './components/Blogs';
+import GaPage from './pages/ga';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/blogs" component={BlogsPage} exact />
           <Route path="/resume" component={ResumePage} exact />
           <Route path="/projects-details" component={ProjectsDetailsPage} exact />
-          <Route path="/blogs/:blogId" component={Blogs} />
+          <Route path="/blogs/ga" component={GaPage} exact />
         </Switch>
       </Router>
     </Worker>
