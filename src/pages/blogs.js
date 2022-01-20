@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Blogs from '../components/Blogs';
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { blogObjFour, blogObjOne, blogObjThree, blogObjTwo } from '../components/Blogs/Data';
+import { blogObjOne } from '../components/Blogs/Data';
 import ScrollToTop from '../components/ScrollToTop';
 
 const BlogsPage = () => {
@@ -17,9 +17,6 @@ const BlogsPage = () => {
                 </GobackArrow>
             </Icon>
             <Blogs {...blogObjOne}/>
-            {/* <Blogs {...blogObjTwo}/>
-            <Blogs {...blogObjThree}/>
-            <Blogs {...blogObjFour}/> */}
         </>
     )
 }
