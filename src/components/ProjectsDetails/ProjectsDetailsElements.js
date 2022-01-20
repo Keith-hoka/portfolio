@@ -130,3 +130,7 @@ export const Img = styled.img`
       cursor: pointer;
   }
 `;
+
+export const TechStack = styled.p`
+  color: ${({lightText}) => (lightText ? "#f3f8f5" : "#010606")};
+`;

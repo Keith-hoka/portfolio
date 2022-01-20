@@ -9,7 +9,8 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%);
+  background: #BAEAC8;
+  /* background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%); */
 `;
 
 export const ContentWrap = styled.div`
@@ -26,7 +27,7 @@ export const ContentWrap = styled.div`
 export const Icon = styled(Link)`
   margin-left: 32px;
   text-decoration: none;
-  color: #fff;
+  color: #01bf71;
   font-weight: 700;
   font-size: 50px;
   font-family: 'Licorice', cursive;
@@ -99,7 +100,7 @@ export const BtnWrapper = styled.div`
 
 export const HireButton = styled(Link)`
   border-radius: 50px;
-  background: ${({primary}) => (primary ? "#fff" : "#01bf71")};
+  background: ${({primary}) => (primary ? "#01bf71" : "#fff")};
   white-space: nowrap;
   text-decoration: none;
   padding: ${({big}) => (big ? "14px 48px" : "12px 30px")};

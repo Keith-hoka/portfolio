@@ -58,6 +58,7 @@ export const FormContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 480px) {
       padding: 10px;

@@ -67,7 +67,7 @@ const About = () => {
                       offset={-80}
                       to="/contact"
                     >
-                        Hire Me
+                        Work with Me
                     </HireButton>
                 </BtnWrapper>
             </Container>

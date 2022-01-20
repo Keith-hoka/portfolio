@@ -58,7 +58,7 @@ const Footer = () => {
                                 <AiFillProject /> Projects
                             </FooterLink>
                             <FooterLink to="/blogs">
-                                <FaMicroblog /> Blogs
+                                <FaMicroblog /> Blog
                             </FooterLink>
                             <FooterLink to="/resume">
                                 <AiFillFilePdf /> Resume

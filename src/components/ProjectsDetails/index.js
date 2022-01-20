@@ -13,7 +13,8 @@ import {
     PButton,
     Column2, 
     Img, 
-    ImgWrap 
+    ImgWrap,
+    TechStack 
 } from './ProjectsDetailsElements';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -22,7 +23,6 @@ const ProjectsDetails = ({
     lightBg, 
     to, 
     to2,
-    display,
     imgStart, 
     topLine, 
     lightText, 
@@ -36,6 +36,7 @@ const ProjectsDetails = ({
     primary,
     dark,
     dark2,
+    techStack
 }) => {
     useEffect(() => {
         Aos.init({ duration: 2000 });
@@ -97,6 +98,7 @@ const ProjectsDetails = ({
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
+                <TechStack>{techStack}</TechStack>
             </InfoContainer>
         </>
     )
