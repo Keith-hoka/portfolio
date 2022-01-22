@@ -14,7 +14,7 @@ function App() {
   return (
     <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.11.338/build/pdf.worker.min.js">
       <Router>
-        <AnimatePresence initial={false} exitBeforeEnter>
+        <AnimatePresence>
           <Switch>
             <Route path="/" component={Home} exact />
             <Route path="/contact" component={ContactPage} exact />
