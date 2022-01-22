@@ -10,7 +10,11 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%);
+  background: linear-gradient(
+    108deg,
+    rgba(1, 147, 86, 1) 0%,
+    rgba(10, 201, 122, 1) 100%
+  );
 `;
 
 export const FormWrap = styled.div`
@@ -20,7 +24,7 @@ export const FormWrap = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 400px) {
-      height: 80%;
+    height: 80%;
   }
 `;
 
@@ -31,20 +35,20 @@ export const Icon = styled(Link)`
   color: #fff;
   font-weight: 700;
   font-size: 50px;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 150px;
 
   @media screen and (max-width: 480px) {
-      margin-left: 16px;
-      margin-top: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
   }
 
   &:hover {
-      color: #010606;
-      transition: 0.5s ease-out;
+    color: #010606;
+    transition: 0.5s ease-out;
   }
 `;
 
@@ -61,7 +65,7 @@ export const FormContent = styled.div`
   margin-bottom: 30px;
 
   @media screen and (max-width: 480px) {
-      padding: 10px;
+    padding: 10px;
   }
 `;
 
@@ -78,7 +82,7 @@ export const Form = styled.form`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
   @media screen and (max-width: 400px) {
-      padding: 32px 32px;
+    padding: 32px 32px;
   }
 `;
 
@@ -100,7 +104,7 @@ export const FormInput = styled.input`
   padding: 16px 16px;
   margin-bottom: 32px;
   border: none;
-  border-radius:4px;
+  border-radius: 4px;
 `;
 
 export const FormButton = styled.button`
@@ -121,5 +125,5 @@ export const FormMessage = styled.textarea`
   margin-bottom: 32px;
   font-size: 14px;
   padding: 16px 16px;
-  border-radius:4px;
+  border-radius: 4px;
 `;

@@ -9,7 +9,7 @@ export const homeObjOne = {
     description: "I am a Sydney based Software Engineer with a background in both Mechanical and Electronics Engineering.",
     buttonLabel: "More About",
     imgStart: true,
-    img: require("../../images/svg-1.svg").default,
+    img: require("../../images/about.svg").default,
     alt: "About",
     dark: false,
     primary: false,

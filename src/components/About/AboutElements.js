@@ -9,7 +9,7 @@ export const Container = styled.div`
   top: 0;
   z-index: 0;
   overflow: hidden;
-  background: #BAEAC8;
+  background: #baeac8;
   /* background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%); */
 `;
 
@@ -20,7 +20,7 @@ export const ContentWrap = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 400px) {
-      height: 80%;
+    height: 80%;
   }
 `;
 
@@ -30,20 +30,20 @@ export const Icon = styled(Link)`
   color: #01bf71;
   font-weight: 700;
   font-size: 50px;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 150px;
 
   @media screen and (max-width: 480px) {
-      margin-left: 16px;
-      margin-top: 8px;
+    margin-left: 16px;
+    margin-top: 8px;
   }
 
   &:hover {
-      color: #010606;
-      transition: 0.5s ease-out;
+    color: #010606;
+    transition: 0.5s ease-out;
   }
 `;
 
@@ -86,7 +86,7 @@ export const AboutContent = styled.p`
   margin-bottom: 30px;
 
   @media screen and (max-width: 600px) {
-      font-size: 16px;
+    font-size: 16px;
   }
 `;
 
@@ -100,12 +100,12 @@ export const BtnWrapper = styled.div`
 
 export const HireButton = styled(Link)`
   border-radius: 50px;
-  background: ${({primary}) => (primary ? "#01bf71" : "#fff")};
+  background: ${({ primary }) => (primary ? "#01bf71" : "#fff")};
   white-space: nowrap;
   text-decoration: none;
-  padding: ${({big}) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({dark}) => (dark ? "#010606" : "#fff")};
-  font-size: ${({fontBig}) => (fontBig ? "20px" : "16px")};
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
@@ -115,8 +115,8 @@ export const HireButton = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: ${({primary}) => (primary ? "#010606" : "#fff")};
-      color: ${({dark}) => (dark ? "#fff" : "#010606")};
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? "#010606" : "#fff")};
+    color: ${({ dark }) => (dark ? "#fff" : "#010606")};
   }
 `;

@@ -10,19 +10,19 @@ export const TechStackContainer = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 1068px) {
-      height: 800px;
+    height: 800px;
   }
 
   @media screen and (max-width: 988px) {
-      height: 800px;
+    height: 800px;
   }
 
   @media screen and (max-width: 816px) {
-      height: 1100px;
+    height: 1100px;
   }
 
   @media screen and (max-width: 565px) {
-      height: 1400px;
+    height: 1400px;
   }
 `;
 
@@ -36,20 +36,20 @@ export const TechStackWrapper = styled.div`
   padding: 0 50px;
 
   @media screen and (max-width: 1068px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   @media screen and (max-width: 988px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 
   @media screen and (max-width: 816px) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-  
+
   @media screen and (max-width: 565px) {
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 0 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 20px;
   }
 `;
 
@@ -67,9 +67,9 @@ export const TechStackCard = styled.div`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-      transform: scale(1.02);
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 `;
 
@@ -85,7 +85,7 @@ export const TechStackH1 = styled.h1`
   margin-bottom: 64px;
 
   @media screen and (max-width: 500px) {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 `;
 

@@ -29,7 +29,7 @@ export default class Particles extends React.Component {
     const context = canvas.getContext("2d");
     const image = new Image();
 
-    image.onload = e => {
+    image.onload = (e) => {
       var rect = new Proton.Rectangle(
         (canvas.width - e.target.width) / 2,
         (canvas.height - e.target.height) / 2,
@@ -98,18 +98,18 @@ export default class Particles extends React.Component {
 
   customScaleBehaviour() {
     return {
-      initialize: function(particle) {
+      initialize: function (particle) {
         particle.oldRadius = particle.radius;
         particle.scale = 0;
       },
-      applyBehaviour: function(particle) {
+      applyBehaviour: function (particle) {
         if (particle.energy >= 2 / 3) {
           particle.scale = (1 - particle.energy) * 3;
         } else if (particle.energy <= 1 / 3) {
           particle.scale = particle.energy * 3;
         }
         particle.radius = particle.oldRadius * particle.scale;
-      }
+      },
     };
   }
 

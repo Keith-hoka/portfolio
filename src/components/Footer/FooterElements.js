@@ -20,7 +20,7 @@ export const FooterLinksContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 820px) {
-      padding-top: 32px;
+    padding-top: 32px;
   }
 `;
 
@@ -29,7 +29,7 @@ export const FooterLinksWrapper = styled.div`
   justify-content: space-between;
 
   @media screen and (max-width: 880px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 `;
 
@@ -44,9 +44,9 @@ export const FooterLinkItems = styled.div`
   color: #fff;
 
   @media screen and (max-width: 500px) {
-      margin: 0;
-      padding: 30px;
-      width: 100%;
+    margin: 0;
+    padding: 30px;
+    width: 100%;
   }
 `;
 
@@ -62,8 +62,8 @@ export const FooterContent = styled.div`
   color: #fff;
 
   @media screen and (max-width: 500px) {
-      margin: 0;
-      padding: 30px;
+    margin: 0;
+    padding: 30px;
   }
 `;
 
@@ -79,8 +79,8 @@ export const FooterLink = styled(Link)`
   font-size: 14px;
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 `;
 
@@ -104,7 +104,7 @@ export const SocialMediaWrap = styled.div`
   margin: 40px auto 0 auto;
 
   @media screen and (max-width: 880px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 `;
 
@@ -118,11 +118,11 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 `;
 
@@ -143,7 +143,7 @@ export const SocialIconLink = styled.a`
   font-size: 24px;
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 `;

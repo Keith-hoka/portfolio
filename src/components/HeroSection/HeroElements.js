@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import { Link as LinkS } from 'react-scroll';
+import { motion } from "framer-motion";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled(motion.div)`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
@@ -14,14 +14,19 @@ export const HeroContainer = styled.div`
   z-index: 1;
 
   :before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-      z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
   }
 `;
 
@@ -63,7 +68,7 @@ export const hue = keyframes`
  }
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
   color: #f35626;
   background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
   -webkit-background-clip: text;
@@ -81,15 +86,15 @@ export const HeroH1 = styled.h1`
   -moz-osx-font-smoothing: grayscale;
 
   @media screen and (max-width: 768px) {
-      font-size: 40px;
+    font-size: 40px;
   }
 
   @media screen and (max-width: 500px) {
-      font-size: 32px;
+    font-size: 32px;
   }
 `;
 
-export const HeroP = styled.p`
+export const HeroP = styled(motion.p)`
   margin-top: 24px;
   color: #fff;
   font-size: 24px;
@@ -97,15 +102,15 @@ export const HeroP = styled.p`
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   @media screen and (max-width: 500px) {
-      font-size: 18px;
+    font-size: 18px;
   }
 `;
 
-export const HeroBtnWrapper = styled.div`
+export const HeroBtnWrapper = styled(motion.div)`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
@@ -129,14 +134,14 @@ export const HomeBtn = styled(Link)`
   display: flex;
 `;
 
-export const ScrollDown = styled(LinkS)`
+export const ScrollDown = styled(motion.div)`
   margin-top: 50px;
   position: relative;
   width: 24px;
   height: 24px;
 `;
 
-export const ChevronDown = styled.div`
+export const ChevronDown = styled(motion.div)`
   position: absolute;
   width: 28px;
   height: 8px;
@@ -154,7 +159,7 @@ export const ChevronDown = styled.div`
 
   &:before,
   &:after {
-    content: ' ';
+    content: " ";
     position: absolute;
     top: 0;
     height: 100%;
@@ -201,12 +206,12 @@ export const ScrollText = styled.span`
   color: #fff;
   text-transform: uppercase;
   white-space: nowrap;
-  opacity: .25;
+  opacity: 0.25;
   animation: pulse 2s linear alternate infinite;
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 
   @keyframes pulse {

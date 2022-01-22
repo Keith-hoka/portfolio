@@ -7,22 +7,22 @@ export const ProjectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #BAEAC8;
+  background: #baeac8;
 
   @media screen and (max-width: 1068px) {
-      height: 1000px;
+    height: 1000px;
   }
 
   @media screen and (max-width: 988px) {
-      height: 1050px;
+    height: 1050px;
   }
 
   @media screen and (max-width: 768px) {
-      height: 1700px;
+    height: 1700px;
   }
 
   @media screen and (max-width: 565px) {
-      height: 1700px;
+    height: 1700px;
   }
 `;
 
@@ -36,16 +36,16 @@ export const ProjectsWrapper = styled.div`
   padding: 0 50px;
 
   @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-  
+
   @media screen and (max-width: 500px) {
-      grid-template-columns: 1fr;
-      padding: 0 20px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
   }
 `;
 
-export const ProjectsCard = styled.div`
+export const ProjectsCard = styled.a`
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -56,11 +56,13 @@ export const ProjectsCard = styled.div`
   padding: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: #010606;
 
   &:hover {
-      transform: scale(1.02);
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 `;
 
@@ -76,7 +78,7 @@ export const ProjectsH1 = styled.h1`
   margin-bottom: 64px;
 
   @media screen and (max-width: 500px) {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 `;
 
@@ -104,12 +106,12 @@ export const BtnWrapper = styled.div`
 export const ProjectsButton = styled(Link)`
   margin-top: 100px;
   border-radius: 50px;
-  background: ${({primary}) => (primary ? "#01bf71" : "#010606")};
+  background: ${({ primary }) => (primary ? "#01bf71" : "#010606")};
   white-space: nowrap;
   text-decoration: none;
-  padding: ${({big}) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({dark}) => (dark ? "#010606" : "#fff")};
-  font-size: ${({fontBig}) => (fontBig ? "20px" : "16px")};
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
@@ -119,8 +121,8 @@ export const ProjectsButton = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: ${({primary}) => (primary ? "#010606" : "#fff")};
-      color: ${({dark}) => (dark ? "#fff" : "#010606")};
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? "#010606" : "#fff")};
+    color: ${({ dark }) => (dark ? "#fff" : "#010606")};
   }
 `;

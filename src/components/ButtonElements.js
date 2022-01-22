@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: ${({primary}) => (primary ? "#01bf71" : "#010606")};
+  background: ${({ primary }) => (primary ? "#01bf71" : "#010606")};
   white-space: nowrap;
   text-decoration: none;
-  padding: ${({big}) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({dark}) => (dark ? "#010606" : "#fff")};
-  font-size: ${({fontBig}) => (fontBig ? "20px" : "16px")};
+  padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
+  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;
@@ -18,7 +18,7 @@ export const Button = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: ${({primary}) => (primary ? "#fff" : "#01bf71")};
+    transition: all 0.2s ease-in-out;
+    background: ${({ primary }) => (primary ? "#fff" : "#01bf71")};
   }
 `;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
+import { motion } from "framer-motion";
 
-export const Nav = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? "#000" : "transparent")};
+export const Nav = styled(motion.nav)`
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -15,7 +16,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   @media screen and (max-width: 960px) {
-      transition: 0.8s all ease;
+    transition: 0.8s all ease;
   }
 `;
 
@@ -29,12 +30,12 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(motion.div, LinkR)`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 2.5rem;
-  font-family: 'Licorice', cursive;
+  font-family: "Licorice", cursive;
   display: flex;
   align-items: center;
   margin-left: 24px;
@@ -42,8 +43,8 @@ export const NavLogo = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 `;
 
@@ -51,14 +52,14 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 768px) {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-      color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
   }
 `;
 
@@ -70,11 +71,11 @@ export const NavMenu = styled.ul`
   margin-right: -22px;
 
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled(motion.li)`
   height: 80px;
 `;
 
@@ -88,21 +89,21 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-      border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #01bf71;
   }
 
   &:hover {
-      color: #01bf71;
-      transition: 0.3s ease-out;
+    color: #01bf71;
+    transition: 0.3s ease-out;
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled(motion.nav)`
   display: flex;
   align-items: center;
 
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
 `;
 
@@ -120,8 +121,8 @@ export const NavBtnLink = styled(LinkR)`
   text-decoration: none;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
-      background: #fff;
-      color: #010606;
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
   }
 `;

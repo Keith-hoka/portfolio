@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ScrollUp = styled.div`
-  display: ${({scrollTop}) => (scrollTop ? "flex" : "none")};
+  display: ${({ scrollTop }) => (scrollTop ? "flex" : "none")};
   position: fixed;
   bottom: 40%;
   right: 30px;
@@ -15,7 +15,7 @@ export const ScrollUp = styled.div`
   opacity: 0.5;
 
   &:hover {
-      opacity: 1;
+    opacity: 1;
   }
 `;
 
@@ -28,10 +28,10 @@ export const IconContainer = styled.div`
 
   @keyframes scrollTop {
     from {
-        transform: translateY(5px);
+      transform: translateY(5px);
     }
     to {
-        transform: translateY(-3px);
+      transform: translateY(-3px);
     }
   }
 `;

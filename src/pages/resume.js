@@ -1,14 +1,14 @@
-import React from 'react';
-import Resume from '../components/Resume';
-import ScrollToTop from '../components/ScrollToTop';
+import React from "react";
+import Resume from "../components/Resume";
+import ScrollToTop from "../components/ScrollToTop";
 
 const ContactPage = () => {
-    return (
-        <>
-            <ScrollToTop />
-            <Resume />
-        </>
-    )
-}
+  return (
+    <>
+      <ScrollToTop />
+      <Resume />
+    </>
+  );
+};
 
-export default ContactPage
+export default ContactPage;

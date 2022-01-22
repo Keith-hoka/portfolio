@@ -1,14 +1,14 @@
-import React from 'react';
-import About from '../components/About';
-import ScrollToTop from '../components/ScrollToTop';
+import React from "react";
+import About from "../components/About";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AboutPage = () => {
-    return (
-        <>
-            <ScrollToTop />
-            <About />
-        </>
-    )
-}
+  return (
+    <>
+      <ScrollToTop />
+      <About />
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;
