@@ -20,32 +20,32 @@ import {
 // import Particles from '../Particles';
 // import Particles from 'react-tsparticles';
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 3,
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: -150 },
+  visible: { opacity: 1, x: 0 },
+};
+
+const scroll = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
-  };
-
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 3,
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, x: -150 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const scroll = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
   };
 
   return (

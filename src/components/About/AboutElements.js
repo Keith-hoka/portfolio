@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   min-height: 692px;
@@ -13,7 +14,7 @@ export const Container = styled.div`
   /* background: linear-gradient(108deg, rgba(1, 147, 86, 1) 0%, rgba(10, 201, 122, 1) 100%); */
 `;
 
-export const ContentWrap = styled.div`
+export const ContentWrap = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -52,11 +53,11 @@ export const GobackArrow = styled.div`
   margin-top: 20px;
 `;
 
-export const AboutTitle = styled.h1`
+export const AboutTitle = styled(motion.h1)`
   text-align: center;
 `;
 
-export const AboutTitle2 = styled.h4`
+export const AboutTitle2 = styled(motion.h4)`
   text-align: center;
 `;
 
@@ -66,7 +67,7 @@ export const AboutCard = styled.div`
   padding: 32px;
 `;
 
-export const AboutImage = styled.img`
+export const AboutImage = styled(motion.img)`
   width: 100%;
   margin-right: 32px;
   max-height: 300px;
@@ -78,7 +79,7 @@ export const ContentP = styled.div`
   flex-direction: column;
 `;
 
-export const AboutContent = styled.p`
+export const AboutContent = styled(motion.p)`
   font-size: 25px;
   margin-left: 50px;
   margin-right: 50px;
