@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   min-height: 692px;
@@ -57,7 +58,7 @@ export const GobackArrow = styled.div`
   margin-top: 20px;
 `;
 
-export const FormContent = styled.div`
+export const FormContent = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -69,7 +70,7 @@ export const FormContent = styled.div`
   }
 `;
 
-export const Form = styled.form`
+export const Form = styled(motion.form)`
   background: #010101;
   max-width: 400px;
   height: auto;

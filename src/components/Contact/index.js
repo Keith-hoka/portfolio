@@ -15,6 +15,22 @@ import {
 } from "./ContactElements";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.8,
+      staggerChildren: 0.5,
+    },
+  },
+};
+
+const scroll = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 const Contact = () => {
   const form = useRef();
 
@@ -50,8 +66,8 @@ const Contact = () => {
               <BsFillArrowLeftCircleFill />
             </GobackArrow>
           </Icon>
-          <FormContent>
-            <Form ref={form} onSubmit={sendEmail}>
+          <FormContent initial="hidden" animate="visible" variants={container}>
+            <Form ref={form} onSubmit={sendEmail} variants={scroll}>
               <FormH1>Contact Me</FormH1>
               <FormLabel htmlFor="for">Name</FormLabel>
               <FormInput type="text" required name="from_name" />
