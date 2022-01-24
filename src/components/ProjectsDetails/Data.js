@@ -17,6 +17,7 @@ import {
   SiMongodb,
   SiNetlify,
   SiPassport,
+  SiMapbox,
 } from "react-icons/si";
 
 export const projectObjOne = {
@@ -132,6 +133,7 @@ export const projectObjFour = {
     <SiMaterialui style={{ margin: "10px" }} />,
     <SiPassport style={{ margin: "10px" }} />,
     <SiMongodb style={{ margin: "10px" }} />,
+    <SiMapbox style={{ margin: "10px" }} />,
     <SiHeroku style={{ margin: "10px" }} />,
     <SiNetlify style={{ margin: "10px" }} />,
   ],
