@@ -1,3 +1,24 @@
+import { ImHtmlFive, ImCss3 } from "react-icons/im";
+import { FaCcStripe, FaNodeJs } from "react-icons/fa";
+import { DiRuby } from "react-icons/di";
+import {
+  SiJavascript,
+  SiJquery,
+  SiGithub,
+  SiRubyonrails,
+  SiPostgresql,
+  SiBootstrap,
+  SiHeroku,
+  SiReact,
+  SiRedux,
+  SiFirebase,
+  SiMaterialui,
+  SiVite,
+  SiMongodb,
+  SiNetlify,
+  SiPassport,
+} from "react-icons/si";
+
 export const projectObjOne = {
   to: "//keith-hoka.github.io/project0",
   to2: "//github.com/Keith-hoka/project0",
@@ -16,7 +37,13 @@ export const projectObjOne = {
   dark: false,
   primary: false,
   darkText: true,
-  techStack: "Tech Stack: HTML, CSS, JavaScript, jQuery, deployed on Github",
+  techStack: [
+    <ImHtmlFive style={{ margin: "10px" }} />,
+    <ImCss3 style={{ margin: "10px" }} />,
+    <SiJavascript style={{ margin: "10px" }} />,
+    <SiJquery style={{ margin: "10px" }} />,
+    <SiGithub style={{ margin: "10px" }} />,
+  ],
 };
 
 export const projectObjTwo = {
@@ -37,8 +64,16 @@ export const projectObjTwo = {
   dark: true,
   primary: true,
   darkText: false,
-  techStack:
-    "Tech Stack: HTML, CSS, Ruby on Rails based on PostgresSQL Backend Database, Bootstrap and Stripe API, deployed on Heroku",
+  techStack: [
+    <ImHtmlFive style={{ margin: "10px" }} />,
+    <ImCss3 style={{ margin: "10px" }} />,
+    <DiRuby style={{ margin: "10px" }} />,
+    <SiRubyonrails style={{ margin: "10px" }} />,
+    <SiPostgresql style={{ margin: "10px" }} />,
+    <SiBootstrap style={{ margin: "10px" }} />,
+    <FaCcStripe style={{ margin: "10px" }} />,
+    <SiHeroku style={{ margin: "10px" }} />,
+  ],
 };
 
 export const projectObjThree = {
@@ -59,8 +94,15 @@ export const projectObjThree = {
   dark: false,
   primary: false,
   darkText: true,
-  techStack:
-    "Tech Stack: ReactJS, Context API, Firebase, Google and Facebook Authentication, Stripe API, Material UI, HTML, CSS, and deployed with Firebase Hosting and Functions",
+  techStack: [
+    <ImHtmlFive style={{ margin: "10px" }} />,
+    <ImCss3 style={{ margin: "10px" }} />,
+    <SiReact style={{ margin: "10px" }} />,
+    <SiRedux style={{ margin: "10px" }} />,
+    <SiFirebase style={{ margin: "10px" }} />,
+    <FaCcStripe style={{ margin: "10px" }} />,
+    <SiMaterialui style={{ margin: "10px" }} />,
+  ],
 };
 
 export const projectObjFour = {
@@ -81,6 +123,16 @@ export const projectObjFour = {
   dark: true,
   primary: true,
   darkText: false,
-  techStack:
-    "Tech Stack: ReactJS in Vite, NodeJS / ExpressJS, CORS, Axios API and MongoDB, Passport JS, Material UI and CSS. Deployed on Heroku(Server) and Netlify(Client)",
+  techStack: [
+    <ImHtmlFive style={{ margin: "10px" }} />,
+    <ImCss3 style={{ margin: "10px" }} />,
+    <SiReact style={{ margin: "10px" }} />,
+    <SiVite style={{ margin: "10px" }} />,
+    <FaNodeJs style={{ margin: "10px" }} />,
+    <SiMaterialui style={{ margin: "10px" }} />,
+    <SiPassport style={{ margin: "10px" }} />,
+    <SiMongodb style={{ margin: "10px" }} />,
+    <SiHeroku style={{ margin: "10px" }} />,
+    <SiNetlify style={{ margin: "10px" }} />,
+  ],
 };

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ScrollUp = styled.div`
   display: ${({ scrollTop }) => (scrollTop ? "flex" : "none")};
   position: fixed;
-  bottom: 40%;
+  bottom: 30px;
   right: 30px;
   width: 40px;
   height: 40px;

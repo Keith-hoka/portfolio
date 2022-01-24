@@ -90,6 +90,7 @@ const ProjectsDetails = ({
                   </ProjectBtn>
                 </BtnWrap>
               </TextWrapper>
+              <TechStack>{techStack}</TechStack>
             </Column1>
             <Column2>
               <ImgWrap>
@@ -98,7 +99,6 @@ const ProjectsDetails = ({
             </Column2>
           </InfoRow>
         </InfoWrapper>
-        <TechStack>{techStack}</TechStack>
       </InfoContainer>
     </>
   );

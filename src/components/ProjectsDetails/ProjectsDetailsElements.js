@@ -12,13 +12,14 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   z-index: 1;
-  height: 500px;
+  max-height: 650px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 24px;
+  padding: 35px 24px;
   justify-content: center;
 `;
 
@@ -134,10 +135,6 @@ export const Img = styled.img`
 
 export const TechStack = styled.div`
   max-width: 100%;
-  padding-left: 100px;
-  padding-bottom: 20px;
-  margin-left: 35px;
-  font-size: 15px;
-  line-height: 24px;
-  color: ${({ lightText }) => (lightText ? "#f3f8f5" : "#010606")};
+  font-size: 30px;
+  color: #01bf71;
 `;
